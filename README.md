@@ -1,7 +1,6 @@
 #Si7020 Arduino Library and Breakout board #
 
-The software and released under GNU License. 
-
+The software and released under GNU License. \\
 The PCB design is released under Creative Commons License.
 
 ## Library ##
