@@ -1,6 +1,7 @@
 #Si7020 Arduino Library and Breakout board #
 
 The software and released under GNU License. 
+
 The PCB design is released under Creative Commons License.
 
 ## Library ##
@@ -9,7 +10,8 @@ Arduino library for Silicon Labs Si7020 relative humidity and temperature
 sensor. Copy the files to Arduino IDE library folder. The sensor uses I2C 
 communication. 
 
-USAGE:
+*USAGE:*
+
 See example/Si7020\_example.ino for basic usage.
 
 ## Breakout ##
@@ -22,7 +24,7 @@ Bill of materials:
 For the photo of assembled board see PCB/Si7020BB.jpg
 
 ## Conecting to Arduino ##
-VCC - Arduino 3.3V
-SDA - Arduino pin A4
-SCL - Arduino pin A5
-GND - Arduino GND
+- VCC - Arduino 3.3V
+- SDA - Arduino pin A4
+- SCL - Arduino pin A5
+- GND - Arduino GND
