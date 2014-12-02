@@ -20,8 +20,6 @@
  * TODO: implement checksum checking
  */
 
-// CHECK NBYTES:
-
 #include "Si7020.h"
 
 Si7020::Si7020(){}
