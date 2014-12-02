@@ -1,6 +1,12 @@
 *
 
 !.gitignore
-!*.sch
-!*.brd
+!*/
+!*/*.sch
+!*/*.brd
 !README*
+!*.cpp
+!*.h
+!*/*.ino
+!*/*.jpg
+
