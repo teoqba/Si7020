@@ -18,7 +18,7 @@
  * <http://www.gnu.org/licenses/>.
  */
 
-#include <Si7020.h>
+#include "Si7020.h"
 #include "Wire.h"
 
 Si7020 sensor;
@@ -46,9 +46,9 @@ void loop(){
   
   // Print out the result
   Serial.print(rh,1);
-  Serial.print(" C   ");
+  Serial.print(" %   ");
   Serial.print(t,2);
-  Serial.println(" %");
+  Serial.println(" C");
   delay(1000);
   
   
