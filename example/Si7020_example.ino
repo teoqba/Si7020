@@ -49,9 +49,17 @@ void loop(){
   Serial.print(" %   ");
   Serial.print(t,2);
   Serial.println(" C");
+
+  // Print the result in the JSON format
+  Serial.print("{\"rh\":\"");
+  Serial.print(rh,1);
+  Serial.print("\",\"temp\":\"");
+  Serial.print(t,2);
+  Serial.println("\"}"); 
+
+
   delay(1000);
-  
-  
+
   // To play switch on/off onboard heater use heaterOn() and heaterOff()
   // heaterOn();
   // delay(5000);
