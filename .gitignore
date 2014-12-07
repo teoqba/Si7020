@@ -9,4 +9,6 @@
 !*.h
 !*/*.ino
 !*/*.jpg
-
+!*.json
+!LICENSE
+!*/*/*.ino
