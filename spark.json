@@ -1,0 +1,7 @@
+{
+    "name": "Si7020",
+    "version": "0.0.1",
+    "author": "Jakub Kaminski teoqba@gmail.com",
+    "license": "GNU GPL",
+    "description": "Spark Core library for Si7020 humidity + temperature sensor"
+}
