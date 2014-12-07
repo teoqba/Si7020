@@ -6,11 +6,11 @@ The PCB design is released under Creative Commons License.
 ## Library ##
 
 Arduino and Spark Core library for Silicon Labs Si7020 relative humidity and temperature
-sensor. When using Arduino, copy the files from firmwire to Arduino IDE library folder. 
+sensor. When using Arduino, copy the files from firmware to Arduino IDE library folder. 
 The sensor uses I2C communication. 
 
 **USAGE:**  
-See firmwire/examples/Si7020\_example.ino for basic usage.
+See firmware/examples/Si7020\_example.ino for basic usage.
 
 ## Breakout ##
 Bill of materials:
