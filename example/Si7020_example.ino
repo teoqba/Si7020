@@ -27,7 +27,7 @@ void setup(){
   Serial.begin(9600);
   sensor.begin();
   
-  // To change resolution of the the sensor use
+  // To change resolution of the sensor use
   // sensor.changeResolution(int i) where i=[0-3], 
   //sensor.changeResolution(0);
 
@@ -39,9 +39,9 @@ void loop(){
   // Measure Temperature
   float t = sensor.getTemp();
   
-  // Temeprature is measured every time RH is requested.
-  // It is faster, theregore, to read it from previous RH
-  // mesurment instead with readTemp()
+  // Temperature is measured every time RH is requested.
+  // It is faster, therefore, to read it from previous RH
+  // measurement instead with readTemp()
   // float t = sensor.readTemp();
   
   // Print out the result
