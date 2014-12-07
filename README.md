@@ -10,7 +10,7 @@ sensor. When using Arduino, copy the files from firmwire to Arduino IDE library 
 The sensor uses I2C communication. 
 
 **USAGE:**  
-See example/Si7020\_example.ino for basic usage.
+See firmwire/examples/Si7020\_example.ino for basic usage.
 
 ## Breakout ##
 Bill of materials:
