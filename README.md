@@ -1,13 +1,13 @@
-#Si7020 Arduino Library and Breakout board #
+#Si7020 Arduino & Spark Core Library and Breakout board #
 
 The software is released under GNU License.   
 The PCB design is released under Creative Commons License.
 
 ## Library ##
 
-Arduino library for Silicon Labs Si7020 relative humidity and temperature
-sensor. Copy the files to Arduino IDE library folder. The sensor uses I2C 
-communication. 
+Arduino and Spark Core library for Silicon Labs Si7020 relative humidity and temperature
+sensor. When using Arduino, copy the files from firmwire to Arduino IDE library folder. 
+The sensor uses I2C communication. 
 
 **USAGE:**  
 See example/Si7020\_example.ino for basic usage.
@@ -26,3 +26,10 @@ For the photo of assembled board see PCB/Si7020BB.jpg
 - SDA - Arduino pin A4
 - SCL - Arduino pin A5
 - GND - Arduino GND
+
+## Connection to Spark Core ##
+- VCC - Spark 3.3V
+- SDA - Spark D0
+- SCL - Spark D1
+- GND - Spark GND
+

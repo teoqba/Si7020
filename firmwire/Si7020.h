@@ -18,11 +18,17 @@
  * <http://www.gnu.org/licenses/>.
  */
 
-#ifndef Si7020_h
-#define Si7020_h
-
+// There are some differences in libraries between Arduino and Spark
+#if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
 #include "Wire.h"
+#elif defined(SPARK)
+#include "application.h"
+#define _BV(bit) (1 << (bit))
+#endif
+
+#ifndef Si7020_h
+#define Si7020_h
 
 #define SI7020      0x40
 #define RH_HOLD     0xE5
