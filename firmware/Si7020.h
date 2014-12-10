@@ -54,7 +54,7 @@ class Si7020
 		void  changeResolution(uint8_t i);
 		void  resetSettings();
 	private:
-		uint16_t makeMesurment(uint8_t command);
+		uint16_t makeMeasurment(uint8_t command);
 		void     writeReg(uint8_t value);
 		uint8_t  readReg();
 };

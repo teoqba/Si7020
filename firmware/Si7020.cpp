@@ -32,7 +32,7 @@ void Si7020::begin()
 float Si7020::getRH()
 {
 	// Measure the relative humidity 
-	uint16_t RH_Code = makeMesurment(RH_HOLD);
+	uint16_t RH_Code = makeMeasurment(RH_NOHOLD);
 	float result = (125.0*RH_Code/65536)-6;
 	return result;
 }
@@ -40,7 +40,7 @@ float Si7020::getRH()
 float Si7020::readTemp()
 {
 	// Read temperature from previous RH measurement.
-	uint16_t temp_Code = makeMesurment(TEMP_PREV);
+	uint16_t temp_Code = makeMeasurment(TEMP_PREV);
 	float result = (175.25*temp_Code/65536)-46.85;
 	return result;
 }
@@ -48,7 +48,7 @@ float Si7020::readTemp()
 float Si7020::getTemp()
 {
 	// Measure temperature 
-	uint16_t temp_Code = makeMesurment(TEMP_HOLD);
+	uint16_t temp_Code = makeMeasurment(TEMP_NOHOLD);
 	float result = (175.25*temp_Code/65536)-46.85;
 	return result;
 }
@@ -106,7 +106,7 @@ void Si7020::resetSettings()
 	writeReg(RESET_SI);
 }
 
-uint16_t Si7020::makeMesurment(uint8_t command)
+uint16_t Si7020::makeMeasurment(uint8_t command)
 {
 	// Take one Si7020 measurement given by command.
 	// It can be either temperature or relative humidity
@@ -122,7 +122,7 @@ uint16_t Si7020::makeMesurment(uint8_t command)
 	// When not using clock stretching (*_NOHOLD commands) delay here 
 	// is needed to wait for the measurement.
 	// According to datasheet the max. conversion time is ~22ms
-	// delay(30);
+	 delay(30);
 		
 	Wire.requestFrom(SI7020,nBytes);
 	//Wait for data
@@ -132,7 +132,7 @@ uint16_t Si7020::makeMesurment(uint8_t command)
 	  counter ++;
 	  if (counter >100){
 	    // Timeout: Sensor did not return any data
-	    return 0;
+	    return 100;
 	  }
 	}
 
