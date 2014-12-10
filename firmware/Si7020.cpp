@@ -122,7 +122,7 @@ uint16_t Si7020::makeMeasurment(uint8_t command)
 	// When not using clock stretching (*_NOHOLD commands) delay here 
 	// is needed to wait for the measurement.
 	// According to datasheet the max. conversion time is ~22ms
-	 delay(30);
+	 delay(100);
 		
 	Wire.requestFrom(SI7020,nBytes);
 	//Wait for data
