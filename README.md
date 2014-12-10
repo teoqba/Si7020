@@ -21,13 +21,13 @@ Bill of materials:
 
 For the photo of assembled board see PCB/Si7020BB.jpg
 
-## Conecting to Arduino ##
+## Connecting to Arduino ##
 - VCC - Arduino 3.3V
 - SDA - Arduino pin A4
 - SCL - Arduino pin A5
 - GND - Arduino GND
 
-## Connection to Spark Core ##
+## Connecting to Spark Core ##
 - VCC - Spark 3.3V
 - SDA - Spark D0
 - SCL - Spark D1
